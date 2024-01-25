@@ -1,4 +1,4 @@
-#N canvas 227 23 225 687 12;
+#N canvas 159 -121 315 707 12;
 #X declare -path abs/;
 #N canvas 2518 23 382 1027 seq 0;
 #X obj 106 106 tgl 20 0 \$0-seq1-run \$0-seq1-run empty 0 -10 0 12 #fcfcfc #000000 #000000 0 1;
@@ -1252,7 +1252,7 @@
 #X coords 0 -1 1 1 130 45 2 100 100;
 #X restore 180 15 pd gui-preset;
 #X obj 271 476 hradio 10 1 0 3 \$0-repZoom \$0-repZoom empty 0 -10 0 12 #fcfcfc #000000 #000000 0;
-#N canvas 454 23 226 687 help 1;
+#N canvas 911 23 454 715 help 0;
 #X obj 101 101 bng 20 250 50 0 empty empty ? 6 10 0 14 #ffc7c6 #000000 #000000;
 #N canvas 2738 23 272 999 startup 0;
 #X obj 65 119 loadbang;
@@ -2299,8 +2299,8 @@
 #X connect 61 0 63 0;
 #X connect 62 0 63 1;
 #X restore 93 255 pd preset;
-#N canvas 910 23 226 687 sequencer 1;
-#N canvas 0 0 1366 738 clock 1;
+#N canvas 1093 23 272 687 sequencer 0;
+#N canvas 0 0 1366 738 clock 0;
 #X obj 147 669 del, f 4;
 #X obj 173 229 f;
 #X obj 202 229 + 1;
@@ -2414,6 +2414,7 @@
 #X connect 0 0 13 0;
 #X connect 0 0 58 0;
 #X connect 1 0 2 0;
+#X connect 1 0 71 0;
 #X connect 2 0 49 0;
 #X connect 3 0 46 0;
 #X connect 4 0 5 0;
@@ -2458,7 +2459,6 @@
 #X connect 48 0 46 1;
 #X connect 49 0 1 1;
 #X connect 49 0 38 0;
-#X connect 49 0 71 0;
 #X connect 50 0 51 0;
 #X connect 51 0 47 0;
 #X connect 51 1 48 0;
@@ -2861,7 +2861,7 @@
 #X text 93 424 Version 0.1;
 #X text 187 224 initalizing of values \, change if you want different starting values;
 #X text 193 195 main sequencer mechnanics;
-#N canvas 682 23 226 687 help-patch 1;
+#N canvas 1024 23 341 715 help-patch 0;
 #X text 167 659 Duration of current step;
 #X text 167 710 Events via gate1;
 #X text 166 770 Events via gate2;
